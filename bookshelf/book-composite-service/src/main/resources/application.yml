@@ -1,0 +1,33 @@
+server.port: 7000
+server.error.include-message: always
+
+app:
+  book-service:
+    host: localhost
+    port: 7001
+  accounting-service:
+    host: localhost
+    port: 7002
+  portal-service:
+    host: localhost
+    port: 7003
+
+logging:
+  level:
+    root: INFO
+    com.jin: DEBUG
+
+---
+spring.profiles: docker
+server.port: 8080
+
+app:
+  book-service:
+    host: book
+    port: 8080
+  accounting-service:
+    host: accounting
+    port: 8080
+  portal-service:
+    host: portal
+    port: 8080

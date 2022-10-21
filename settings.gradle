@@ -1,0 +1,8 @@
+include 'api'
+include 'utils'
+include ':bookshelf:book-service'
+include ':bookshelf:accounting-service'
+include ':bookshelf:portal-service'
+include ':bookshelf:book-composite-service'
+
+

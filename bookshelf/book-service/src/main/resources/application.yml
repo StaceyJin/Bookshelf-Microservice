@@ -1,0 +1,19 @@
+server.port: 7001
+server.error.include message: always
+
+spring.data.mongodb:
+  host: localhost
+  port: 27017
+  database: book-db
+
+logging:
+  level:
+    root: INFO
+    com.jin: DEBUG
+
+---
+spring.profiles: docker
+
+spring.data.mongodb.host: mongodb
+
+server.port: 8080
